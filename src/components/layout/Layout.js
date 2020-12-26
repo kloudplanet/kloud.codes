@@ -7,10 +7,8 @@ const Layout = (props) => {
     return (
         <div className={styles.container}>
         <Header title={props.title}/>
-
-        {props?.children}
-
-      <Footer />
+          {props?.children}
+        <Footer />
     </div>
     )
 }
