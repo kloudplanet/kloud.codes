@@ -1,5 +1,4 @@
 import Layout from '../components/layout/Layout'
-import styles from '../styles/Home.module.css'
 import { BlogApi } from '../services/blog'
 import BlogBox from '../components/BlogBox'
 
