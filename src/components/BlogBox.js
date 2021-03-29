@@ -3,7 +3,7 @@ import Link from 'next/link'
 const BlogBox = (props) => {
     return (
         <div>
-            <Link href={props.slug}><h1>{props.title}</h1></Link>
+            <Link href={props.slug} passHref><h1 className={"cursor_pointer"}>{props.title}</h1></Link>
         </div>
     )
 

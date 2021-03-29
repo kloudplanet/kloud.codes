@@ -5,18 +5,24 @@ import Layout from '../components/layout/Layout'
 
 const BlogDetails = (props) => {
     const { entry: {title, tags, publishDate, body, coverImage} } = props
+
+    if(Object.keys(props.entry).length === 0 && props.entry.constructor === Object){
+      return "Loading...."
+    }
+    
     return (
         <Layout title={title}>
         <h1>{title}</h1>
 
-        {coverImage.imageUrl && <Image
+        {coverImage?.imageUrl && <Image
         src={coverImage.imageUrl}
         alt={coverImage.description || `${title}-Image`}
         width={500}
         height={500}
       />}
-
+      <div className="blog_content">
       <ReactMarkdown children={body}/>
+      </div>
 
         <div>
 
