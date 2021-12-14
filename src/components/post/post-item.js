@@ -6,10 +6,10 @@ import classes from './post-item.module.css'
 const PostItem = (props) => {
   const { post } = props
   return (
-    <li className={classes.post}>
+    <div className={classes.postCol}>
       <Link href={post.slug}>
-        <a>
-          <div className={classes.image}>
+        <div className={classes.postCard}>
+          {/* <div className="thumb">
             <Image
               src={
                 'https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg'
@@ -19,14 +19,12 @@ const PostItem = (props) => {
               height={200}
               layout="responsive"
             />
-          </div>
-          <div className={classes.content}>
+          </div> */} 
+            <p className={classes.postCardTime}>{post.publishDate}</p>
             <h3>{post.title}</h3>
-            <time>{post.publishDate}</time>
-          </div>
-        </a>
+        </div>
       </Link>
-    </li>
+    </div>
   )
 }
 

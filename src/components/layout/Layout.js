@@ -4,13 +4,13 @@ import Header from './Header'
 import Footer from './Footer'
 
 const Layout = (props) => {
-    return (
-        <div className={styles.container}>
-        <Header title={props.title}/>
-          {props?.children}
-        <Footer />
+  return (
+    <div className={styles.homepage}>
+      <Header title={props.title}/>
+      {props?.children}
+      <Footer />
     </div>
-    )
+  )
 }
 
 export default Layout

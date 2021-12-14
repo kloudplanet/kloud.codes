@@ -1,9 +1,28 @@
 import Head from 'next/head'
+import styles from '../../styles/Home.module.css' 
 import Image from 'next/image'
-import Link from 'next/link'
-import { Fragment } from 'react'
+import Link from 'next/link' 
+import { Fragment, useState, useEffect } from "react";
 
 const Header = ({ title }) => {
+  const [sticky, setSticky] = useState(false);
+
+  const trackScroll = () => {
+    if (typeof window === "undefined") {
+      return;
+    } else {
+      setSticky(window.scrollY >= 80);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("scroll", trackScroll);
+
+    return () => {
+      document.removeEventListener("scroll", trackScroll);
+    };
+  }, []);
+ 
   return (
     <Fragment>
       <Head>
@@ -23,23 +42,24 @@ const Header = ({ title }) => {
           // ></link>
         }
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap"
-          rel="stylesheet"
-        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
       </Head>
-      <Link href="/">
-        <a>
-          <Image
-            src="/images/cloudplanet.png"
-            alt="Simform Blog "
-            width={250}
-            height={100}
-            className={'main_logo cursor_pointer'}
-          />
-        </a>
-      </Link>
+      <header className={`header ${sticky ? 'sticky' : ''}`}> 
+          <div className="container">
+            <div className="logo">
+              <Link href="/">
+                  <Image
+                    src="/images/cloudplanet.png"
+                    alt="Simform Blog "
+                    width={250}
+                    height={100}
+                    className={'main_logo cursor_pointer'}
+                  />
+              </Link>
+              </div>
+          </div>
+      </header>
     </Fragment>
   )
 }

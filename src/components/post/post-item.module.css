@@ -1,37 +1,77 @@
-.post {
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-    background-color: var(--color-grey-800);
-    text-align: center;
+  .postCol {
+    padding:20px 15px;
+    width: 50%;
+    max-width: 50%;
+    flex: 0 0 50%;
   }
-  
-  .post a {
-    color: var(--color-grey-100);
+  .postCard {
+    background: rgba(254, 223, 194, 0.2);
+    border: 1px solid #E6E6E6;
+    padding: 0 20px 20px;
+    border-radius: 0px 40px;
+    height: 100%;
+    box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.05),
+    0 3px 5px -1px rgba(0, 0, 0, 0.07);
+    transition: all 0.4s ease;
+    cursor: pointer;
   }
-  
-  .image {
-    width: 100%;
-    max-height: 20rem;
-    overflow: hidden;
+  .postCard:hover { 
+    box-shadow: 4px 4px 26px 5px rgba(0, 0, 0, 0.05),
+      6px 8px 26px 0px rgba(0, 0, 0, 0.02);  
+      transform: translate(0px, -10px);
   }
-  
-  .image img {
-    object-fit: cover;
+  .postCard:hover h3 { 
+    color: #FD9040;  
   }
-  
-  .content {
-    padding: var(--size-4);
-  }
-  
-  .content h3 {
-    margin: var(--size-2) 0;
-    font-size: var(--size-6);
-  }
-  
-  .content time {
+  .postCardTime { 
     font-style: italic;
-    color: var(--color-grey-300);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    color: #FD9040;
+    position: relative;
+    padding: 10px 0;
   }
-  
-  .content p {
-    line-height: var(--size-6);
+  .postCardTime::after { 
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background-color: #FD9040;
   }
+  .postCard h3 {
+    font-weight: 600;
+    transition: all 0.4s ease;
+    font-size: 26px;
+    line-height: 36px;
+    color: #232323;
+    margin: 10px 0 0;
+  }
+
+@media screen and (max-width: 991px) {
+  .postCard h3 { 
+    font-size: 24px;
+    line-height: 32px;
+  }
+} 
+@media screen and (max-width: 767px) {
+  .postCol {
+    padding:15px;
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .postCard h3 { 
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .postCard { 
+    padding: 0 15px 15px;
+  }
+  .postCardTime::after { 
+    left: -15px;
+  }
+}

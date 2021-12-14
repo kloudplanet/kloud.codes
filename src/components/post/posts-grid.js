@@ -10,12 +10,12 @@ function PostsGrid(props) {
   }
 
   return (
-    <ul className={classes.grid}>
+    <div className={classes.blogGrid}>
       {posts.map((post, i) => {
         // if (i + 1 === localStorage.getItem('default-item')) return;
         return <PostItem key={post.slug} post={post} />
       })}
-    </ul>
+    </div>
   )
 }
 

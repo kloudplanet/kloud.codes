@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import ReactMarkdown from 'react-markdown'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-import { ghcolors } from 'react-syntax-highlighter/dist/cjs/styles/prism'
+import { tomorrow } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 import Gist from 'react-gist'
 //coy
 //ghcolors
@@ -45,7 +45,7 @@ const BlogDetails = (props) => {
       return (
         <div className="code-center">
           <SyntaxHighlighter
-            style={ghcolors}
+            style={tomorrow}
             language={language}
             children={value}
             showLineNumbers={true}
