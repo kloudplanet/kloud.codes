@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import ReactMarkdown from 'react-markdown'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-import { tomorrow } from 'react-syntax-highlighter/dist/cjs/styles/prism'
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 import Gist from 'react-gist'
 //coy
 //ghcolors
@@ -45,16 +45,18 @@ const BlogDetails = (props) => {
       return (
         <div className="code-center">
           <SyntaxHighlighter
-            style={tomorrow}
+            style={vscDarkPlus}
             language={language}
             children={value}
             showLineNumbers={true}
             useInlineStyles={true}
             customStyle={{
-              // border: '1px solid #FF914C',
-              width: '50%',
-              //backgroundColor: '#ffd7b5',
-              display: 'inline-block'
+              borderRadius: '15px',
+              boxShadow: '0 1px 18px 0 rgb(0 0 0 / 5%), 0 3px 5px -1px rgb(0 0 0 / 7%)',
+              maxWidth: '800px',
+              width: '100%',
+              margin:'0 auto 20px',
+              display: 'inline-block', 
             }}
           />
         </div>
@@ -71,8 +73,14 @@ const BlogDetails = (props) => {
 
   return (
     <Layout title={title}>
-      <h1>{title}</h1>
-
+      <div className="pageHeader">
+        <div className="container">
+        <h1>{title}</h1>
+        </div>
+      </div>
+      <div className="pageWrapper">
+        <div className="container">
+          <div className="wrapperCard">
       {coverImage?.imageUrl && (
         <Image
           src={coverImage.imageUrl}
@@ -85,8 +93,9 @@ const BlogDetails = (props) => {
       <div className="blog_content">
         <ReactMarkdown renderers={customRenderers}>{body}</ReactMarkdown>
       </div>
-
-      <div></div>
+      </div>
+      </div>
+      </div>
     </Layout>
   )
 }
