@@ -1,4 +1,4 @@
-/* font-family: 'Inter', sans-serif;
+/* font-family: 'Yrsa', serif;
 font-family: 'Raleway', sans-serif; */
 * {
   box-sizing: border-box;
@@ -7,8 +7,8 @@ font-family: 'Raleway', sans-serif; */
 html,
 body { 
   padding: 0;
-  margin: 0; 
-  font-family: 'Inter', sans-serif;
+  margin: 0;  
+  font-family: 'Yrsa', serif;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
@@ -33,12 +33,42 @@ a {
   text-align: center;
 }
 
-.theme-color {
-  background-color: #ffd7b5;
-  border-radius: 10px;
-  padding: 1px;
-  margin: 10px;
+.blockquote-card {
+  background-color: rgb(254, 223, 194, 0.2);
+  border:1px solid #FD9040;
+  border-radius: 20px;
+  padding:20px 60px;
+  margin: 0 0 20px;
   color: #393a34;
+  position: relative;
+}
+.blockquote-card blockquote {
+  margin: 0;
+}
+.blockquote-card p:last-child {
+  margin-bottom: 0px;
+}
+.blockquote-card .iconTop {
+  position: absolute;
+  top: -14px;
+  left: 20px;
+  color: #FD9040;
+  transform: rotate(180deg);
+  width: 26px;
+  height: 26px;
+  align-items: center;
+  justify-content: center; 
+}
+.blockquote-card .iconBottom {
+  position: absolute;
+  bottom: -13px;
+  right: 20px;
+  color: #FD9040;
+  display: flex;
+  width: 26px;
+  height: 26px;
+  align-items: center;
+  justify-content: center; 
 }
 
 .header {
@@ -57,16 +87,54 @@ a {
   background: rgba(255, 255, 255, 0.65);
   box-shadow: 0 0 21px 5px rgba(0, 0, 0, 0.2);
 }
-.header .logo {
-  max-width: 250px;
-  margin: 0 auto;
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.header .logo  {
+.header .logo {
+  max-width: 200px;
   transition: all 0.3s ease-in-out;
+}
+.header .menu-row ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.header .menu-row ul li {
+  margin: 0 0 0 20px; 
+  list-style: none;
+}
+.header .menu-row ul li a {
+  font-size: 22px;
+  font-family: 'Raleway', sans-serif;
+  line-height: 24px; 
+  position: relative;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  color: #232323;
+}
+.header .menu-row ul li a:hover { 
+  color: #FD9040;
+}
+.header .menu-row ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #FD9040;
+  transition: all 0.3s ease-in-out;
+}
+.header .menu-row ul li a:hover::after { 
+  width: 100%; 
 }
 .header.sticky .logo {
   max-width: 150px;
-  margin: 0 auto;
+}
+.menu-btn {
+  display: none;
 }
 .pageHeader {
   padding: 234px 0 140px;
@@ -118,14 +186,27 @@ a {
 }
 .blog_content p {
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
   color: #232323;
   margin: 0 0 20px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Yrsa', serif;
 }
 .blog_content .content-image { 
   margin: 0 0 20px; 
+  position: relative;
+}
+.blog_content .content-image > div{ 
+  position: static !important;
+}
+.blog_content .content-image > div img { 
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  min-width: inherit !important;
+  min-height: inherit !important;
 }
 @media screen and (max-width: 991px) {
   .footer { 
@@ -141,6 +222,49 @@ a {
   }
   .pageHeader {
     padding: 200px 0 140px;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .header {
+    padding: 15px 0;
+  }
+  .header .logo {
+    max-width: 150px;
+  }
+  .menu-btn .mobile-btn{
+    display: block;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    color: #FD9040;
+  }
+  .header-row .menu-row  {
+    position: fixed;
+    top: 96px;
+    left: 0;
+    height: calc(100vh - 96px);
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(254, 223, 194, 0.9);
+  }
+  .header-row .menu-row.open {
+    transform: scaleY(1);
+  }
+  .header-row .menu-row ul {
+    flex-direction: column;
+  }
+  .header-row .menu-row ul li  {
+    margin: 10px 0;
+  }
+  .header-row .menu-row ul li a {
+    text-align: center;
   }
 }
 @media screen and (max-width: 767px) {
@@ -165,17 +289,5 @@ a {
   .pageHeader h1 {
     font-size: 28px;
     line-height: 34px;
-  }
-  .header  { 
-    padding: 20px 0;
-  }
-  .header .logo {
-    max-width: 160px;
-  }
-  .header.sticky   {
-    padding: 10px 0;
-  }
-  .header.sticky .logo {
-    max-width: 120px;
-  }
+  } 
 }
