@@ -6,7 +6,7 @@ import Footer from './Footer'
 const Layout = (props) => {
   return (
     <div className={styles.homepage}>
-      <Header title={props.title}/>
+      <Header />
       {props?.children}
       <Footer />
     </div>

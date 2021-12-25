@@ -1,29 +1,33 @@
 import { Fragment } from 'react'
-
+import Head from 'next/head'
 import Layout from '../components/layout/Layout'
 import { BlogApi } from '../services/blog'
 import AllPosts from '../components/post/all-post'
 
 import styles from './../styles/Home.module.css'
 
-
 const Home = (props) => {
   const { posts } = props
   return (
-    <Layout title="Blog Home">
+    <Fragment>
+      <Head>
+        <title>Kloud.codes Home for informative blogs</title>
+        <meta
+          name="discription"
+          content="Kloud.codes provide information on linux, javascript and other cloud related technologies"
+        />
+      </Head>
       <div className="pageHeader">
-        <div className="container">
-          <h1>Blog</h1>
-        </div>
+        <div className="container"></div>
       </div>
       <div className="pageWrapper">
         <div className="container">
           <div className="wrapperCard">
-          <AllPosts posts={posts} />
+            <AllPosts posts={posts} />
           </div>
         </div>
       </div>
-    </Layout>
+    </Fragment>
   )
 }
 

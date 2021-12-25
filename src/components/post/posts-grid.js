@@ -5,14 +5,10 @@ function PostsGrid(props) {
   const { posts } = props
   const ISSERVER = typeof window === 'undefined'
 
-  if (!ISSERVER) {
-    console.log(localStorage.getItem('default-item'))
-  }
 
   return (
     <div className={classes.blogGrid}>
-      {posts.map((post, i) => {
-        // if (i + 1 === localStorage.getItem('default-item')) return;
+      {posts.map((post) => {
         return <PostItem key={post.slug} post={post} />
       })}
     </div>
