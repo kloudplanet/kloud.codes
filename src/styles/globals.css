@@ -196,10 +196,10 @@ a {
   margin: 0 0 20px; 
   position: relative;
 }
-.blog_content .content-image > div{ 
+.blog_content .content-image > span{ 
   position: static !important;
 }
-.blog_content .content-image > div img { 
+.blog_content .content-image > span img { 
   position: static !important;
   width: auto !important;
   height: auto !important;
