@@ -4,7 +4,7 @@ import Head from 'next/head'
 import ReactMarkdown from 'react-markdown'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
-import Gist from 'react-gist'
+
 //coy
 //ghcolors
 //prism
@@ -59,7 +59,7 @@ const BlogDetails = (props) => {
             style={vscDarkPlus}
             language={language}
             children={value}
-            showLineNumbers={true}
+            showLineNumbers={false}
             useInlineStyles={true}
             customStyle={{
               borderRadius: '15px',

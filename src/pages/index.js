@@ -1,10 +1,9 @@
 import { Fragment } from 'react'
 import Head from 'next/head'
-import Layout from '../components/layout/Layout'
 import { BlogApi } from '../services/blog'
 import AllPosts from '../components/post/all-post'
 
-import styles from './../styles/Home.module.css'
+
 
 const Home = (props) => {
   const { posts } = props
