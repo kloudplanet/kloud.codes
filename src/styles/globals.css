@@ -192,6 +192,15 @@ a {
   margin: 0 0 20px;
   font-family: 'Yrsa', serif;
 }
+
+.blog_content a:hover {
+  background-color: orange;
+  color: white;
+}
+
+.blog_content a {
+  color: orange;
+}
 .blog_content .content-image { 
   margin: 0 0 20px; 
   position: relative;
