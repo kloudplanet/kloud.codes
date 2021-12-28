@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://example.com</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/how-to-copy-files-and-directories-in-linux</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/how-to-create-files-and-directories-in-linux</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/how-to-view-file-in-linux-terminal</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/how-to-find-file-type-in-linux</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/understanding-linux-file-timestamps-mtime-ctime-and-atime-and-sort-files</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/ls-command-in-depth-with-example</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/absolute-and-relative-path-in-linux</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/introduction-to-linux-file-system</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/different-type-of-users-in-linux-system</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/how-to-record-date-and-time-for-each-command-in-history</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/how-to-run-linux-commands-without-leaving-trace</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/introduction-to-linux-command-history</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/how-to-get-linux-command-help-using-man</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/understand-linux-command-structure-and-basics-of-commands</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/behind-the-scenes-how-javascript-scope-scope-chain-and-lexical-environment</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/behind-the-scenes-how-javascript-functions-works</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/behind-the-scenes-javascript-hoisting</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/behind-the-scenes-javascript-execution-context</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/introduction-to-es6-destructuring</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/introduction-to-es6-arrow-function</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/introduction-to-ES6-template-literals</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/how-to-enable-password-authentication-in-AWS-linux-instance</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/how-to-add-a-ssh-user-account-on-aws-linux-instance</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/how-to-set-up-SSH-key-and-use-it-with-git</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/introduction-to-docker</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+<url><loc>https://example.com/how-to-start-career-as-a-DevOps</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-28T17:56:50.807Z</lastmod></url>
+</urlset>
