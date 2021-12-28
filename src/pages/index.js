@@ -12,7 +12,7 @@ const Home = (props) => {
       <Head>
         <title>Kloud.codes Home for informative blogs</title>
         <meta
-          name="discription"
+          name="description"
           content="Kloud.codes provide information on linux, javascript and other cloud related technologies"
         />
       </Head>
