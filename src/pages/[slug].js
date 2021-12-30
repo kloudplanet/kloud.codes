@@ -93,7 +93,7 @@ const BlogDetails = (props) => {
     <Fragment>
       <Head>
         <title>{title}</title>
-        <meta name="discription" content={ellipsis} />
+        <meta name="description" content={ellipsis} />
       </Head>
       <div className="pageHeader">
         <div className="container">
