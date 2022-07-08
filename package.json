@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "contentful": "^8.1.5",
-    "moment": "^2.29.1",
+    "moment": "^2.29.4",
     "next": "12",
     "next-sitemap": "^1.6.203",
     "react": "^17.0.2",
